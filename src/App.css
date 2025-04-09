@@ -94,6 +94,11 @@ table {
   color: #333;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
 .nav-right ol li a {
   text-decoration: none;
   color: #333;
