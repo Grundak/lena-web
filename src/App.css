@@ -83,6 +83,11 @@ table {
   margin-top: 10px;
 }
 
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
 .nav-left span {
   font-size: 1.2rem;
   font-weight: bold;
