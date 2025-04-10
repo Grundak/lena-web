@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/lena-web/static/css/main.304b1ce6.css",
-    "main.js": "/lena-web/static/js/main.3a8e6a3c.js",
+    "main.css": "/lena-web/static/css/main.d06918f3.css",
+    "main.js": "/lena-web/static/js/main.b7a44c52.js",
     "static/js/453.ed3810f9.chunk.js": "/lena-web/static/js/453.ed3810f9.chunk.js",
     "static/media/lena.webp": "/lena-web/static/media/lena.c94338eb8aeecc3ee419.webp",
+    "static/media/logo.webp": "/lena-web/static/media/logo.bc408177bfb863085358.webp",
     "index.html": "/lena-web/index.html",
-    "main.304b1ce6.css.map": "/lena-web/static/css/main.304b1ce6.css.map",
-    "main.3a8e6a3c.js.map": "/lena-web/static/js/main.3a8e6a3c.js.map",
+    "main.d06918f3.css.map": "/lena-web/static/css/main.d06918f3.css.map",
+    "main.b7a44c52.js.map": "/lena-web/static/js/main.b7a44c52.js.map",
     "453.ed3810f9.chunk.js.map": "/lena-web/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.304b1ce6.css",
-    "static/js/main.3a8e6a3c.js"
+    "static/css/main.d06918f3.css",
+    "static/js/main.b7a44c52.js"
   ]
 }
