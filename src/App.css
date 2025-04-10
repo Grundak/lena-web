@@ -271,11 +271,25 @@ table {
 
 @media (max-width: 550px) and (min-width: 300px) {
   .hamburger-menu {
-    display: inline-block;
+    display: flex; /* Zobrazení hamburger menu */
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--text-color);
+    position: absolute; /* Umístění relativně k rodiči */
+    top: 0;
+    right: 0;
+    margin: 2.3rem 2rem; /* Přidání odsazení od horního a pravého okraje */
+    z-index: 10;
   }
 
   .nav-right {
     display: none;
+    align-items: center;
+    justify-content: center;
   }
 
   .nav-right.open{
