@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import Logo from "../images/logo.webp";
 
 function Header() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -25,7 +26,7 @@ function Header() {
     <header className="App-header">
       <div className="navigation">
         <div className="nav-left">
-          <span>Lena <strong>Tattoo</strong> Art</span>
+          <img src={Logo} alt="Logo" className="logo" />
         </div>
         <button
           className="hamburger-menu"

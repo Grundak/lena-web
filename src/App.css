@@ -75,38 +75,11 @@ table {
   background-color: #ffffff;
 }
 
-.nav-left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  font-family: "Lato", sans-serif;
-  font-size: 1.2rem;
-  text-transform: uppercase;
+.logo {
+  width: 150px;
+  height: auto;
 }
 
-.nav-left span:hover {
-  color: var(--text-color-light);
-}
-
-.nav-left .logo {
-  width: 40px;
-  height: 40px;
-  margin-top: 10px;
-}
-
-.nav-left span {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #333;
-}
-
-.nav-left span strong {
-  font-family: "Qwitcher Grypen", cursive;
-  font-size: 2rem;
-  color: var(--text-color-light);
-  text-transform: none;
-}
 .nav-right {
   display: block;
 }
