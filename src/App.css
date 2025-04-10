@@ -294,6 +294,7 @@ table {
 
   .nav-right.open{
     display: flex;
+    z-index: 12;
   }
 
   .nav-right.open ol {
