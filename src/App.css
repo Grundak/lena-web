@@ -57,10 +57,11 @@ table {
   --primary-color: #000000;
   --secondary-color: #f8f8f8f6;
   --text-color: #1f1f1f;
-  --text-color-light: #555;
+  --text-color-light: #a8a8a8;
   --background-color: #fff;
   --button-color: #1b1b1b;
-  --button-hover-color: #626262;
+  --button-hover-color: #c1c1c1;
+  --hover-color: #a81249;
 }
 
 
@@ -70,8 +71,8 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: #f8f8f8;
+  padding: 1.5rem 2rem;
+  background-color: #ffffff;
 }
 
 .nav-left {
@@ -79,6 +80,13 @@ table {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.nav-left span:hover {
+  color: var(--text-color-light);
 }
 
 .nav-left .logo {
@@ -93,6 +101,12 @@ table {
   color: #333;
 }
 
+.nav-left span strong {
+  font-family: "Qwitcher Grypen", cursive;
+  font-size: 2rem;
+  color: var(--text-color-light);
+  text-transform: none;
+}
 .nav-right {
   display: block;
 }
@@ -100,12 +114,14 @@ table {
 .nav-right ol {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 4rem;
   margin: 0;
   padding: 0;
 }
 
 .nav-right ol li a {
+  font-family: "Lato", serif;
+  font-size: 1rem;
   text-decoration: none;
   color: #333;
   font-weight: bold;
@@ -161,13 +177,26 @@ table {
   color: var(--text-color-light);
 }
 
+/* $$$$$$$$$ HAMBURGER MENU $$$$$$$$$ */
+.hamburger-menu {
+  display: none; /* Skryté ve výchozím stavu */
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--text-color);
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  z-index: 10;
+}
 
 
 /* $$$$$$$$$ LENA SECTION $$$$$$$$$$ */
 .lena-section {
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 3rem 2rem;
   background-color: #f9f9f9;
 }
 
@@ -182,8 +211,16 @@ table {
 
 .lena-left .lena-image {
   width: 100%;
-  max-width: 300px;
+  max-width: 450px;
   margin-top: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  filter: grayscale(100%); /* Černobílý efekt */
+  transition: filter 0.3s ease; /* Plynulý přechod */
+}
+
+.lena-left .lena-image:hover {
+  filter: grayscale(0%); /* Zobrazení barev při hoveru */
 }
 
 .lena-right {
@@ -197,7 +234,7 @@ table {
 .button-booking {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin: 4rem 0rem;
   padding: 10px 20px;
   background-color: var(--button-color);
   color: #fff;
@@ -210,6 +247,8 @@ table {
   font-style: normal;
   font-size: 2rem;
   transition: background-color 0.3s ease;
+  animation: pulse 3s infinite; /* Přidána animace */
+  transform-origin: center; /* Zajišťuje, že animace vychází ze středu */
 }
 
 .button-booking:hover {
@@ -236,3 +275,67 @@ table {
 
 
 /* $$$$$$$$$$ FOOTER $$$$$$$$$$ */
+
+
+/* $$$$$$$$$$$ ANIMATIONS $$$$$$$$$$ */
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    transform: scale(1.03); /* Jemné zvětšení */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* $$$$$$$$$$$ MEDIA QUERIES $$$$$$$$$$ */
+
+@media (max-width: 550px) and (min-width: 300px) {
+  .hamburger-menu {
+    display: inline-block;
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  .nav-right.open{
+    display: flex;
+  }
+
+  .nav-right.open ol {
+    flex-direction: column;
+    gap: 0;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: var(--background-color);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  }
+
+  .nav-right.open ol li {
+    margin: 0.5rem ;
+  }
+  .nav-right.open.dropbtn ol li a {
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--text-color);
+  }
+
+  .lena-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 2rem;
+    background-color: #f9f9f9;
+  }
+}

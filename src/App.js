@@ -1,4 +1,4 @@
-import lenaImage from './lena.jpg'; // Přidejte obrázek Leny do projektu a importujte jej
+import lenaImage from './images/lena.webp'; // Přidejte obrázek Leny do projektu a importujte jej
 import './App.css';
 import Header from './components/Header';
 

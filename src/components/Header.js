@@ -1,15 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
-import logo from "../logo.svg"; // Přizpůsob cestu
 
 function Header() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const dropdownRef = useRef(null);
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
   };
 
-  // Zavře dropdown, když klikneš mimo
   useEffect(() => {
     function handleClickOutside(event) {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -26,13 +25,20 @@ function Header() {
     <header className="App-header">
       <div className="navigation">
         <div className="nav-left">
-          <span>Lena Tattoo Art</span>
-          <img src={logo} alt="Logo" className="logo" />
+          <span>Lena <strong>Tattoo</strong> Art</span>
         </div>
-        <div className="nav-right">
+        <button
+          className="hamburger-menu"
+          onClick={() => {
+            setMenuOpen(!menuOpen)
+            console.log("Menu open:", !menuOpen);
+          }}
+        >
+          ☰
+        </button>
+        <div className={`nav-right ${menuOpen ? "open" : ""}`}>
           <ol>
             <li><a href="#lena">Lena</a></li>
-
             <li ref={dropdownRef} className="dropdown">
               <button onClick={toggleDropdown} className="dropbtn">Galerie</button>
               {dropdownOpen && (
@@ -42,12 +48,10 @@ function Header() {
                 </div>
               )}
             </li>
-
             <li><a href="#kontakt">Kontakt</a></li>
           </ol>
         </div>
       </div>
-
     </header>
   );
 }
