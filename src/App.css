@@ -243,6 +243,40 @@ table {
 
 /* $$$$$$$$$ GALLERY $$$$$$$$$$ */
 
+/* Kontejner galerie */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responzivní mřížka */
+  gap: 16px; /* Mezera mezi buňkami */
+  padding: 16px;
+}
+
+/* Obalující div pro obrázky */
+.gallery-container > div {
+  width: 100%;
+  aspect-ratio: 1; /* Poměr stran 1:1 (čtverec) */
+  overflow: hidden; /* Skrytí přetékajícího obsahu */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Záložní barva pro případ, že se obrázek nenačte */
+  border-radius: 8px; /* Zaoblené rohy */
+}
+
+/* Obrázky v galerii */
+.gallery-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Zachování poměru stran obrázku a vyplnění prostoru */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animace při hoveru */
+  cursor: pointer;
+}
+
+/* Efekt při najetí myší na obrázek */
+.gallery-container img:hover {
+  transform: scale(1.05); /* Jemné zvětšení */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Zvýraznění stínu */
+}
 
 /* $$$$$$$$$$ CONTACT $$$$$$$$$$ */
 

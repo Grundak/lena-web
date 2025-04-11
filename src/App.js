@@ -1,6 +1,8 @@
 import lenaImage from './images/lena.webp'; // Přidejte obrázek Leny do projektu a importujte jej
 import './App.css';
 import Header from './components/Header';
+import GalleryTattoo from './components/GalleryTattoo';
+import GalleryArt from './components/GalleryArt';
 
 function App() {
   return (
@@ -24,6 +26,10 @@ function App() {
           </p>
         </div>
       </section>
+
+      <GalleryTattoo />
+      <GalleryArt />
+
     </div>
   );
 }
