@@ -96,7 +96,7 @@ table {
   font-family: "Lato", serif;
   font-size: 1rem;
   text-decoration: none;
-  color: #333;
+  color: var(--text-color);
   font-weight: bold;
   transition: color 0.3s ease;
   text-transform: uppercase;
@@ -116,9 +116,15 @@ table {
   color: var(--text-color);
   font-weight: bold;
   font-size: 1rem;
+  font-family: "Lato", serif;
   cursor: pointer;
   text-transform: uppercase;
   transition: color 0.3s ease;
+  padding: 0; /* Odstranění výchozího paddingu tlačítka */
+  margin: 0; /* Odstranění výchozího marginu tlačítka */
+  line-height: 1; /* Zarovnání textu na střed */
+  display: inline-block; /* Chování jako inline prvek */
+  text-decoration: none; /* Odstranění podtržení */
 }
 
 .dropbtn:hover {
