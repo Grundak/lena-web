@@ -10,7 +10,7 @@ const GalleryArt = () => {
     const [open, setOpen] = useState();
 
     return (
-        <div className="gallery-container">
+        <div className="gallery-container" id="art">
             {images.map((image, index) => (
                 <div
                     key={index}
@@ -21,6 +21,7 @@ const GalleryArt = () => {
                         src={image}
                         alt={`Art ${index + 1}`}
                         className="w-full h-auto object-cover"
+                        loading="lazy"
                     />
                 </div>
             ))}

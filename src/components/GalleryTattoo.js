@@ -10,7 +10,7 @@ const GalleryTattoo = () => {
     const [open, setOpen] = useState();
 
     return (
-        <div className="gallery-container">
+        <div className="gallery-container" id="tattoo">
             {images.map((image, index) => (
                 <div
                     key={index}
@@ -21,6 +21,7 @@ const GalleryTattoo = () => {
                         src={image}
                         alt={`Tattoo ${index + 1}`}
                         className="w-full h-auto object-cover"
+                        loading="lazy"
                     />
                 </div>
             ))}

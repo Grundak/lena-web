@@ -1,3 +1,5 @@
+@import "leaflet/dist/leaflet.css";
+
 /* $$$$$$$$$ RESET STYLES $$$$$$$$$$ */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -286,7 +288,52 @@ table {
 
 /* $$$$$$$$$$ CONTACT $$$$$$$$$$ */
 
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: #f9f9f9;
+}
 
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-left h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-left ol {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-left ol li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.contact-left i {
+  margin-right: 0.5rem;
+}
+
+.contact-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.google-map {
+  height: 400px; /* Výška mapy */
+  width: 100%; /* Šířka mapy */
+  border-radius: 8px; /* Zaoblené rohy */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Jemný stín */
+}
 /* $$$$$$$$$$ FOOTER $$$$$$$$$$ */
 
 
