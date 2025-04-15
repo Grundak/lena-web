@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lena-web/static/css/main.68f1e074.css",
-    "main.js": "/lena-web/static/js/main.b2783976.js",
+    "main.css": "/lena-web/static/css/main.f6239ba6.css",
+    "main.js": "/lena-web/static/js/main.474e2095.js",
     "static/js/453.68693753.chunk.js": "/lena-web/static/js/453.68693753.chunk.js",
     "static/media/lena.webp": "/lena-web/static/media/lena.c94338eb8aeecc3ee419.webp",
     "static/media/03.webp": "/lena-web/static/media/03.cdffb7482bacde04c6d5.webp",
@@ -80,13 +80,14 @@
     "static/media/logo.webp": "/lena-web/static/media/logo.bc408177bfb863085358.webp",
     "static/media/93.webp": "/lena-web/static/media/93.61d802c43f7b84f20925.webp",
     "static/media/55.webp": "/lena-web/static/media/55.18d7b4f922098b3e1a1c.webp",
+    "static/media/neonspot.webp": "/lena-web/static/media/neonspot.36de018b414faabc9b7a.webp",
     "index.html": "/lena-web/index.html",
-    "main.68f1e074.css.map": "/lena-web/static/css/main.68f1e074.css.map",
-    "main.b2783976.js.map": "/lena-web/static/js/main.b2783976.js.map",
+    "main.f6239ba6.css.map": "/lena-web/static/css/main.f6239ba6.css.map",
+    "main.474e2095.js.map": "/lena-web/static/js/main.474e2095.js.map",
     "453.68693753.chunk.js.map": "/lena-web/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.68f1e074.css",
-    "static/js/main.b2783976.js"
+    "static/css/main.f6239ba6.css",
+    "static/js/main.474e2095.js"
   ]
 }
