@@ -218,7 +218,7 @@ table {
   margin: 4rem 0rem;
   padding: 10px 20px;
   background-color: var(--button-color);
-  color: #fff;
+  color: var(--secondary-color);
   border: none;
   border-radius: 60px;
   cursor: pointer;
@@ -233,7 +233,12 @@ table {
 }
 
 .button-booking:hover {
-  background-color: var(--button-hover-color);
+  background-color: var(--text-color-light);
+}
+
+.button-booking a {
+  color: var(--secondary-color);
+  text-decoration: none;
 }
 
 .lena-right h3 {
@@ -300,12 +305,15 @@ table {
   display: flex;
   flex-direction: column;
   flex: 1;
+  align-items: center;
   min-width: 300px;
 }
 
 .contact-left h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+  font-family: "Lato", serif;
 }
 
 .contact-left ol {
@@ -315,8 +323,9 @@ table {
 
 .contact-left ol li {
   margin-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: var(--text-color);
+  font-family: "Lato", sans-serif;
 }
 
 .contact-left i {
@@ -328,6 +337,26 @@ table {
   min-width: 300px;
 }
 
+.tattoo-studio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+.tattoo-studio img {
+  align-self: center;
+  width: 35%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Jemný stín */
+  margin: 1rem 0; /* Odsazení od ostatních prvků */
+}
+
+.contact-icons {
+  display: flex;
+  gap: 1rem;
+}
 .google-map {
   height: 400px; /* Výška mapy */
   width: 100%; /* Šířka mapy */
@@ -336,6 +365,52 @@ table {
 }
 /* $$$$$$$$$$ FOOTER $$$$$$$$$$ */
 
+.App-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: "Lato", sans-serif;
+}
+
+.footer-upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.footer-author {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer-author a {
+  color: var(--secondary-color);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-references a{
+  display: flex;
+  gap: 1rem;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+
+.footer-down {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 0.9rem;
+  padding: 2rem 2rem;
+}
 
 /* $$$$$$$$$$$ ANIMATIONS $$$$$$$$$$ */
 

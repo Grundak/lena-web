@@ -11,7 +11,7 @@ return (
   <img src={lenaImage} alt="Lena" className="lena-image" />
 </div>
 <div className="lena-right">
-  <button className="button-booking">Objednat se</button>
+  <button className="button-booking"><a href="tel:+420777777777">Objednat se</a></button>
   <h3>O mně</h3>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 

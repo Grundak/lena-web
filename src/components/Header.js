@@ -49,7 +49,7 @@ function Header() {
                 </div>
               )}
             </li>
-            <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="#contact">Kontakt</a></li>
           </ol>
         </div>
       </div>
