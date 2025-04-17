@@ -4,9 +4,6 @@ function Footer() {
     return (
         <footer className="App-footer">
             <div className="footer-upper">
-                <div className="footer-author">
-                    <a href="">Dev & Des by Grundak</a>
-                </div>
                 <div className="footer-legal">
                     <ol>
                         <li><strong>Lenka Lejsková</strong></li>
@@ -19,6 +16,9 @@ function Footer() {
                     <a href="https://www.facebook.com/lenalejskovaart">Facebook</a>
                     <a href="https://www.instagram.com/lenalejskova_tattooer/">Instagram</a>
                 </div>
+            </div>
+            <div className="footer-author">
+                <a href="">Dev & Des by Grundak</a>
             </div>
             <div className="footer-down">
                 <p>&copy; 2025 <strong>Lena Tattoo Art</strong>. Všechna práva vyhrazena.</p>

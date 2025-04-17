@@ -135,12 +135,13 @@ table {
 
 .dropdown-content {
   position: absolute;
-  top: 100%;
-  left: -35%;
+  top: 150%;
+  left: -40%;
   background-color: var(--background-color);
   box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
   z-index: 1;
   min-width: 120px;
+  border-radius: 5px;
 }
 
 .dropdown-content a {
@@ -223,6 +224,7 @@ table {
   border-radius: 60px;
   cursor: pointer;
   text-decoration: none;
+  text-transform: lowercase;
   font-family: "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
@@ -245,6 +247,7 @@ table {
   font-size: 1.5rem;
   margin-bottom: 10px;
   font-family: "Lora", serif;
+  text-transform: lowercase;
 }
 
 .lena-right p {
@@ -260,8 +263,8 @@ table {
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responzivní mřížka */
-  gap: 16px; /* Mezera mezi buňkami */
-  padding: 16px;
+  /*gap: 16px; /* Mezera mezi buňkami */
+  /*padding: 16px;*/
 }
 
 /* Obalující div pro obrázky */
@@ -273,7 +276,7 @@ table {
   justify-content: center;
   align-items: center;
   background-color: #f0f0f0; /* Záložní barva pro případ, že se obrázek nenačte */
-  border-radius: 8px; /* Zaoblené rohy */
+  /*border-radius: 8px; */
 }
 
 /* Obrázky v galerii */
@@ -368,7 +371,7 @@ table {
 .App-footer {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: var(--primary-color);
   color: var(--secondary-color);
   font-family: "Lato", sans-serif;
@@ -379,12 +382,13 @@ table {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 1rem 2rem;
+  padding: 2rem 1rem;
 }
 
 .footer-author {
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
 }
 
 .footer-author a {
@@ -392,6 +396,7 @@ table {
   font-weight: bold;
   text-decoration: none;
   transition: color 0.3s ease;
+  
 }
 
 .footer-references a{
@@ -409,7 +414,8 @@ table {
   align-items: center;
   width: 100%;
   font-size: 0.9rem;
-  padding: 2rem 2rem;
+  padding: 1rem 2rem;
+  text-align: center;
 }
 
 /* $$$$$$$$$$$ ANIMATIONS $$$$$$$$$$ */
@@ -479,13 +485,31 @@ table {
     font-size: 1.2rem;
     text-align: center;
     color: var(--text-color);
+    border-radius: 5px;
   }
 
+  .dropdown-content {
+    position: absolute;
+    top: -170%;
+    left: -170%;
+    background-color: var(--background-color);
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    z-index: 1;
+    min-width: 120px;
+  }
   .lena-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 3rem 2rem;
     background-color: #f9f9f9;
+  }
+}
+
+/* Pro obrazovky pod 900px */
+@media (max-width: 900px) {
+  .gallery-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 obrázky vedle sebe */
   }
 }

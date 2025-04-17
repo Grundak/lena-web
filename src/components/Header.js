@@ -44,8 +44,8 @@ function Header() {
               <button onClick={toggleDropdown} className="dropbtn">Galerie</button>
               {dropdownOpen && (
                 <div className="dropdown-content">
-                  <a href="#tattoo">Tattoo</a>
-                  <a href="#art">Art</a>
+                  <a href="#tattoo">Tetování</a>
+                  <a href="#art">Dizajny</a>
                 </div>
               )}
             </li>
