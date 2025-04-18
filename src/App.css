@@ -61,6 +61,7 @@ table {
   --text-color: #1f1f1f;
   --text-color-light: #a8a8a8;
   --background-color: #fff;
+  --background-color-darker: #f9f9f9;
   --button-color: #1b1b1b;
   --button-hover-color: #c1c1c1;
   --hover-color: #a81249;
@@ -74,7 +75,7 @@ table {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 2rem;
-  background-color: #ffffff;
+  background-color: var(--background-color);
 }
 
 .logo {
@@ -178,8 +179,8 @@ table {
 .lena-section {
   display: flex;
   align-items: center;
-  padding: 3rem 2rem;
-  background-color: #f9f9f9;
+  padding: 3rem 0rem;
+  background-color: var(--background-color-darker);
 }
 
 .lena-left {
@@ -211,6 +212,10 @@ table {
   align-items: center;
   flex: 1;
   margin-left: 20px;
+}
+
+.lena-right p {
+  margin-bottom: 0.5rem;
 }
 
 .button-booking {
@@ -299,9 +304,14 @@ table {
 .contact-section {
   display: flex;
   flex-wrap: wrap;
-  padding: 2rem;
+  padding: 1rem;
   gap: 2rem;
   background-color: #f9f9f9;
+}
+
+.contact-info {
+  display: flex;
+  margin: 1rem auto 1rem 1rem;
 }
 
 .contact-left {
@@ -335,6 +345,89 @@ table {
   margin-right: 0.5rem;
 }
 
+.contact-left p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: var(--text-color);
+  font-family: "Lato", sans-serif;
+  line-height: 1.3rem;
+}
+
+.contact-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* $$$$$$$$$$$$$ CONTACT FORM $$$$$$$$$$ */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 1rem 0rem 0rem 0rem;
+  gap: 1.5rem;
+  
+  font-family: "Lato", sans-serif;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.submit-btn {
+  display: block; /* Zajistí, že margin funguje správně */
+  margin: 1rem auto; /* Automatické zarovnání na střed */
+  padding: 10px 20px;
+  background-color: var(--button-color);
+  color: var(--secondary-color);
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+.submit-btn:hover {
+  background-color: var(--text-color-light);
+}
+
+.form-info {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* $$$$$$$$$$ CONTACT RIGHT $$$$$$$$$$ */
+
 .contact-right {
   flex: 1;
   min-width: 300px;
@@ -348,6 +441,7 @@ table {
   padding: 2rem;
   background-color: #f9f9f9;
 }
+
 .tattoo-studio img {
   align-self: center;
   width: 35%;
@@ -509,7 +603,12 @@ table {
 
 /* Pro obrazovky pod 900px */
 @media (max-width: 900px) {
+  .lena-section {
+    flex-direction: column;
+    align-items: center;
+  }
   .gallery-container {
     grid-template-columns: repeat(4, 1fr); /* 4 obrázky vedle sebe */
   }
+
 }

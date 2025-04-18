@@ -8,7 +8,8 @@ function Footer() {
                     <ol>
                         <li><strong>Lenka Lejsková</strong></li>
                         <li>+420 777 777 777</li>
-                        <li>Národní třída 50, 695 01, Hodonín</li>
+                        <li>Národní třída 50</li>
+                        <li>695 01, Hodonín</li>
                         <li>IČO: 99999999</li>
                     </ol>
                 </div>
