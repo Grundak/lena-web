@@ -3,7 +3,7 @@ import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import Neonspot from "../images/neonspot.webp";
 
 function Contact() {
-    const position = { lat: 50.0755, lng: 14.4378 };
+    const position = { lat: 48.855137204263166, lng: 17.12478584421522 };
 
     console.log("Google Maps API Key:", process.env.REACT_APP_GOOGLE_MAPS_API_KEY);
 
@@ -19,16 +19,16 @@ function Contact() {
                         <li>tel. +420 777 777 777</li>
                     </ol>
                 </div>
-                
+
                 <p className="contact-text">Pokud máte zájem o tetování, neváhejte mě kontaktovat pomocí formuláře.</p>
-                <form className="contact-form">
+                <form className="contact-form" id="form">
                     <div className="form-group">
                         <label htmlFor="name">Jméno a příjmení</label>
                         <input
                             type="text"
                             id="name"
                             name="name"
-                            placeholder="Vaše jméno a příjmení"
+                            placeholder="Jan Novák"
                             required
                         />
                     </div>
@@ -38,16 +38,16 @@ function Contact() {
                             type="email"
                             id="email"
                             name="email"
-                            placeholder="Váš e-mail"
+                            placeholder="jan.novak@gmail.com"
                             required
                         />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="message">Vaše přání</label>
+                        <label htmlFor="message">Tvoje přání</label>
                         <textarea
                             id="message"
                             name="message"
-                            placeholder="Popište své přání"
+                            placeholder={`1. Napiš svoji představu, co chceš vytetovat\n2. Umístění na těle\n3. Velikost (přibližně)`}
                             rows="5"
                             required
                         ></textarea>

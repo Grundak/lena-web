@@ -11,8 +11,7 @@ function Lena() {
         <img src={lenaImage} alt="Lena" className="lena-image" />
       </div>
       <div className="lena-right">
-        <button className="button-booking"><a href="tel:+420777777777">Objednat se</a></button>
-        <h3>O mně</h3>
+        <button className="button-booking"><a href="#form">Objednat se</a></button>
         <p>
           Jsem Lena Lejsková, tatérka z jižní Moravy. V roce 2006 jsem vystudovala malbu a od té doby tvořím umění v různých formách. Tetování se věnuji osmým rokem – přirozeně v něm propojuji volnost malby s osobním příběhem každého motivu.</p>
 

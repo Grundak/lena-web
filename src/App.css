@@ -65,8 +65,15 @@ table {
   --button-color: #1b1b1b;
   --button-hover-color: #c1c1c1;
   --hover-color: #a81249;
+  --placeholder-color: #a8a8a8;
 }
 
+/* Nastavení fontu pro všechny placeholdery */
+::placeholder {
+  font-family: "Lora", serif;
+  color: var(--placeholder-color); 
+  font-size: 1rem; 
+}
 
 /* $$$$$$$$$$ HEADER $$$$$$$$$$ */
 
@@ -215,7 +222,7 @@ table {
 }
 
 .lena-right p {
-  margin-bottom: 0.5rem;
+  padding: 0.5rem;
 }
 
 .button-booking {
@@ -229,7 +236,6 @@ table {
   border-radius: 60px;
   cursor: pointer;
   text-decoration: none;
-  text-transform: lowercase;
   font-family: "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
@@ -248,13 +254,6 @@ table {
   text-decoration: none;
 }
 
-.lena-right h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  font-family: "Lora", serif;
-  text-transform: lowercase;
-}
-
 .lena-right p {
   font-size: 1rem;
   line-height: 1.6;
@@ -268,20 +267,20 @@ table {
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responzivní mřížka */
-  /*gap: 16px; /* Mezera mezi buňkami */
-  /*padding: 16px;*/
+  gap: 0.5rem; /* Mezera mezi buňkami */
+  padding: 0.5rem; /* Odsazení kolem galerie */
 }
 
 /* Obalující div pro obrázky */
 .gallery-container > div {
   width: 100%;
-  aspect-ratio: 1; /* Poměr stran 1:1 (čtverec) */
+  aspect-ratio: 3 / 4; /* Poměr stran 1:1 (čtverec) */
   overflow: hidden; /* Skrytí přetékajícího obsahu */
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f0f0f0; /* Záložní barva pro případ, že se obrázek nenačte */
-  /*border-radius: 8px; */
+  border-radius: 8px; /* Zaoblené rohy */
 }
 
 /* Obrázky v galerii */
@@ -327,6 +326,7 @@ table {
   font-weight: bold;
   margin-bottom: 1.2rem;
   font-family: "Lato", serif;
+  text-transform: uppercase;
 }
 
 .contact-left ol {
@@ -376,6 +376,7 @@ table {
 }
 
 .form-group label {
+  font-family: "Lora", serif;
   font-size: 1rem;
   margin-bottom: 0.5rem;
   font-weight: bold;
@@ -384,17 +385,19 @@ table {
 
 .form-group input,
 .form-group textarea {
+  resize: none;
   padding: 0.8rem;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
   width: 100%;
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #007bff;
+  border-color: var(--primary-color);
   outline: none;
 }
 
@@ -408,7 +411,6 @@ table {
   border-radius: 60px;
   cursor: pointer;
   text-decoration: none;
-  text-transform: lowercase;
   font-family: "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
@@ -444,8 +446,9 @@ table {
 
 .tattoo-studio img {
   align-self: center;
-  width: 35%;
+  width: 100%;
   height: auto;
+  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Jemný stín */
   margin: 1rem 0; /* Odsazení od ostatních prvků */
 }
@@ -610,5 +613,7 @@ table {
   .gallery-container {
     grid-template-columns: repeat(4, 1fr); /* 4 obrázky vedle sebe */
   }
-
+  .footer-upper {
+    justify-content: space-evenly;
+  }
 }
