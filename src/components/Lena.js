@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const lenaImage = require('../images/lena.webp');
 
@@ -11,7 +12,7 @@ function Lena() {
         <img src={lenaImage} alt="Lena" className="lena-image" />
       </div>
       <div className="lena-right">
-        <button className="button-booking"><a href="/Contact/#form">Objednat se</a></button>
+        <button className="button-booking"><Link to="/contact/#form">Objednat se</Link></button>
         <p>
           Jsem <strong>Lena Lejsková</strong>, tatérka z jižní Moravy. V roce 2006 jsem vystudovala malbu a od té doby tvořím umění v různých formách. Tetování se věnuji osmým rokem – přirozeně v něm propojuji volnost malby s osobním příběhem každého motivu.</p>
 
