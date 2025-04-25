@@ -269,6 +269,7 @@ table {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responzivní mřížka */
   gap: 0.5rem; /* Mezera mezi buňkami */
   padding: 0.5rem; /* Odsazení kolem galerie */
+  background-color: var(--background-color-darker);
 }
 
 /* Obalující div pro obrázky */
@@ -303,9 +304,9 @@ table {
 .contact-section {
   display: flex;
   flex-wrap: wrap;
-  padding: 1rem;
+  padding: 2rem 1rem 1rem 1rem;
   gap: 2rem;
-  background-color: #f9f9f9;
+  background-color: var(--background-color-darker);
 }
 
 .contact-info {
@@ -321,7 +322,7 @@ table {
   min-width: 300px;
 }
 
-.contact-left h3 {
+.contact-left h1 {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1.2rem;
@@ -360,13 +361,21 @@ table {
 }
 
 /* $$$$$$$$$$$$$ CONTACT FORM $$$$$$$$$$ */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 1rem 0rem 0rem 0rem;
+  gap: 1.5rem;
+  font-family: "Lato", sans-serif;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
   width: 90%;
   margin: 1rem 0rem 0rem 0rem;
   gap: 1.5rem;
-  
   font-family: "Lato", sans-serif;
 }
 
@@ -450,7 +459,6 @@ table {
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Jemný stín */
-  margin: 1rem 0; /* Odsazení od ostatních prvků */
 }
 
 .contact-icons {

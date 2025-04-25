@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom"; // Import Link z react-router-dom
 import Logo from "../images/logo.webp";
 
 function Header() {
@@ -31,7 +32,7 @@ function Header() {
         <button
           className="hamburger-menu"
           onClick={() => {
-            setMenuOpen(!menuOpen)
+            setMenuOpen(!menuOpen);
             console.log("Menu open:", !menuOpen);
           }}
         >
@@ -39,17 +40,21 @@ function Header() {
         </button>
         <div className={`nav-right ${menuOpen ? "open" : ""}`}>
           <ol>
-            <li><a href="#lena">Lena</a></li>
+            <li>
+              <Link to="/lena-web">Lena</Link> {/* Odkaz na domovskou stránku */}
+            </li>
             <li ref={dropdownRef} className="dropdown">
               <button onClick={toggleDropdown} className="dropbtn">Galerie</button>
               {dropdownOpen && (
                 <div className="dropdown-content">
-                  <a href="#tattoo">Tetování</a>
-                  <a href="#art">Dizajny</a>
+                  <Link to="/tattoo-gallery">Tetování</Link> {/* Odkaz na tetovací galerii */}
+                  <Link to="/art-gallery">Dizajny</Link> {/* Odkaz na uměleckou galerii */}
                 </div>
               )}
             </li>
-            <li><a href="#contact">Kontakt</a></li>
+            <li>
+              <Link to="/contact">Kontakt</Link> {/* Odkaz na kontaktní stránku */}
+            </li>
           </ol>
         </div>
       </div>

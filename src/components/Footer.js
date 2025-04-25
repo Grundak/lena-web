@@ -7,7 +7,7 @@ function Footer() {
                 <div className="footer-legal">
                     <ol>
                         <li><strong>Lenka Lejsková</strong></li>
-                        <li>+420 777 777 777</li>
+                        <li>+420 721 437 761</li>
                         <li>Národní třída 50</li>
                         <li>695 01, Hodonín</li>
                         <li>IČO: 99999999</li>
@@ -19,7 +19,7 @@ function Footer() {
                 </div>
             </div>
             <div className="footer-author">
-                <a href="">Dev & Des by Grundak</a>
+                <a href="https://github.com/Grundak">Dev & Des by Grundak</a>
             </div>
             <div className="footer-down">
                 <p>&copy; 2025 <strong>Lena Tattoo Art</strong>. Všechna práva vyhrazena.</p>
