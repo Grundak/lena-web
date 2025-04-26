@@ -23,10 +23,10 @@ function Contact() {
 
                 <p className="contact-text">Pokud máte zájem o tetování, kontaktujte mě pomocí formuláře.</p>
                 <Form />
-                <p className="form-info">Pro potvrzení termínu je potřeba uhradit zálohu – ta se odečte z ceny tetování.<br />
-                    Pokud se nemůžete dostavit, dejte vědět minimálně 4 dny předem, jinak záloha propadá.<br />
-                    Záloha je nevratná, ale při včasném zrušení ji můžeme přesunout na nový termín.<br />
-                    Platba probíhá převodem – údaje vám pošlu ve zprávě.</p>
+                <p className="form-info">Pro potvrzení termínu je potřeba uhradit zálohu – ta se odečte z ceny tetování.</p>
+                <p className="form-info">Pokud se nemůžete dostavit, dejte vědět minimálně 4 dny předem, jinak záloha propadá.</p>
+                <p className="form-info">Záloha je nevratná, ale při včasném zrušení ji můžeme přesunout na nový termín.</p>
+                <p className="form-info">Platba probíhá převodem – údaje vám pošlu ve zprávě po domluvě.</p>
             </div>
             <div className="contact-right">
                 <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}>

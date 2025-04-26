@@ -347,11 +347,10 @@ table {
 }
 
 .contact-left p {
-  margin: 1rem 0;
   font-size: 1rem;
   color: var(--text-color);
   font-family: "Lora", sans-serif;
-  line-height: 2.3rem;
+  line-height: 1.2rem;
 }
 
 .contact-text {
@@ -431,7 +430,9 @@ table {
 }
 
 .form-info {
-  margin: 0;
+  display: flex;
+  text-align: start;
+  margin: 0rem 2rem 1rem 2rem;
   font-family: "Lato", sans-serif;
   font-style: italic;
   font-weight: bold;
