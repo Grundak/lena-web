@@ -8,7 +8,7 @@ function Form() {
         setResult("Posílám...");
         const formData = new FormData(event.target);
 
-        formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+        formData.append("access_key", "4f4e8d56-c5df-419b-bd88-8359941fc1ba");
 
         const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
@@ -35,7 +35,7 @@ function Form() {
                             type="text"
                             id="name"
                             name="name"
-                            placeholder="Jan Novák"
+                            placeholder="Jana Nováková"
                             required
                         />
                     </div>
@@ -45,7 +45,7 @@ function Form() {
                             type="email"
                             id="email"
                             name="email"
-                            placeholder="jan.novak@gmail.com"
+                            placeholder="jana.novakova@gmail.com"
                             required
                         />
                     </div>

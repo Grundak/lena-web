@@ -6,6 +6,7 @@ function Header() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const menuRef = useRef(null); // Ref pro hamburger menu
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
@@ -13,8 +14,13 @@ function Header() {
 
   useEffect(() => {
     function handleClickOutside(event) {
+      // Zavření dropdownu
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setDropdownOpen(false);
+      }
+      // Zavření hamburger menu
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenuOpen(false);
       }
     }
     document.addEventListener("mousedown", handleClickOutside);
@@ -38,7 +44,10 @@ function Header() {
         >
           ☰
         </button>
-        <div className={`nav-right ${menuOpen ? "open" : ""}`}>
+        <div
+          className={`nav-right ${menuOpen ? "open" : ""}`}
+          ref={menuRef} // Ref pro hamburger menu
+        >
           <ol>
             <li>
               <Link to="/lena-web">Lena</Link> {/* Odkaz na domovskou stránku */}
