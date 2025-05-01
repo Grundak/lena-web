@@ -183,6 +183,16 @@ table {
 
 
 /* $$$$$$$$$ LENA SECTION $$$$$$$$$$ */
+.lena-name {
+  font-family: "Lato", serif;
+  font-size: 2rem;
+  color: var(--text-color);
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1.5rem 0rem;
+}
+
 .lena-section {
   display: flex;
   align-items: center;
@@ -219,16 +229,29 @@ table {
   align-items: center;
   flex: 1;
   margin-left: 20px;
+  animation: slideInFromRight 1.5s ease-out;
 }
 
 .lena-right p {
   padding: 0.5rem;
 }
 
+.lena-right h2 {
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  color: var(--text-color);
+  padding: 0.5rem;
+  padding-top: 1rem;
+  text-align: left;
+  font-weight: bold;
+  text-transform: uppercase;
+  align-self: flex-start;
+}
+
 .button-booking {
   display: flex;
   justify-content: center;
-  margin: 4rem 0rem;
+  margin: 1rem 0rem;
   padding: 10px 20px;
   background-color: var(--button-color);
   color: var(--secondary-color);
@@ -270,6 +293,7 @@ table {
   gap: 0.5rem; /* Mezera mezi buňkami */
   padding: 0.5rem; /* Odsazení kolem galerie */
   background-color: var(--background-color-darker);
+  animation: slideInFromRight 1.3s ease-out;
 }
 
 /* Obalující div pro obrázky */
@@ -307,6 +331,7 @@ table {
   padding: 2rem 1rem 1rem 1rem;
   gap: 2rem;
   background-color: var(--background-color-darker);
+  animation: slideInFromRight 1s ease-out;
 }
 
 .contact-info {
@@ -538,6 +563,17 @@ table {
   100% {
     transform: scale(1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%); /* Text je mimo obrazovku napravo */
+    opacity: 0; /* Neviditelný */
+  }
+  100% {
+    transform: translateX(0); /* Text je na svém místě */
+    opacity: 1; /* Viditelný */
   }
 }
 

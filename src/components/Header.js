@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom"; // Import Link z react-router-dom
-import Logo from "../images/logo.webp";
+import Logo from "../images/lena-lejskova-tattoo-artist-hodonin-logo.webp";
 
 function Header() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -34,7 +34,7 @@ function Header() {
       <div className="navigation">
         <div className="nav-left">
           <Link to="/lena-web">
-            <img src={Logo} alt="Logo" className="logo" />
+            <img src={Logo} alt="lena-lejskova-tattoo-artist-hodonin-logo" className="logo" />
           </Link>
         </div>
         <button
