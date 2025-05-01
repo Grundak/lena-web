@@ -33,7 +33,9 @@ function Header() {
     <header className="App-header">
       <div className="navigation">
         <div className="nav-left">
-          <img src={Logo} alt="Logo" className="logo" />
+          <Link to="/lena-web">
+            <img src={Logo} alt="Logo" className="logo" />
+          </Link>
         </div>
         <button
           className="hamburger-menu"

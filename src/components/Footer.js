@@ -10,7 +10,7 @@ function Footer() {
                         <li>+420 721 437 761</li>
                         <li>Národní třída 50</li>
                         <li>695 01, Hodonín</li>
-                        <li>IČO: 99999999</li>
+                        <li>IČO: 01041801</li>
                     </ol>
                 </div>
                 <div className="footer-references">
