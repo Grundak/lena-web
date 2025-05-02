@@ -33,7 +33,7 @@ function Header() {
     <header className="App-header">
       <div className="navigation">
         <div className="nav-left">
-          <Link to="/lena-web">
+          <Link to="/">
             <img src={Logo} alt="lena-lejskova-tattoo-artist-hodonin-logo" className="logo" />
           </Link>
         </div>
@@ -52,7 +52,7 @@ function Header() {
         >
           <ol>
             <li>
-              <Link to="/lena-web">Lena</Link> {/* Odkaz na domovskou stránku */}
+              <Link to="/">Lena</Link> {/* Odkaz na domovskou stránku */}
             </li>
             <li ref={dropdownRef} className="dropdown">
               <button onClick={toggleDropdown} className="dropbtn">Galerie</button>

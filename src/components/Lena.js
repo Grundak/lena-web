@@ -21,11 +21,7 @@ function Lena() {
 
         <h2>Inspirace</h2>
 
-        <p>Inspiraci čerpám hlavně z přírody – z jejích bytostí, tvarů a rostlin. Pracuji se stylizací, abstraktními linkami a výraznými barvami, které často plynou do měkkých, kouřových stínů.</p>
-
-        <button className="button-booking"><Link to="/contact/#form">Objednat se</Link></button>
-
-        <p>Opakující se motivy v tetování mě vedou k hledání nových cest a posouvání reality do světa abstrakce, který nemá hranice. Každé tetování je tak trochu malba – jedinečná a živá.</p>
+        <p>Inspiraci čerpám hlavně z přírody – z jejích bytostí, tvarů a rostlin. Pracuji se stylizací, abstraktními linkami a výraznými barvami, které často plynou do měkkých, kouřových stínů. Opakující se motivy v tetování mě vedou k hledání nových cest a posouvání reality do světa abstrakce, který nemá hranice. Každé tetování je tak trochu malba – jedinečná a živá.</p>
 
         <h2>Úspěchy</h2>
 
@@ -34,6 +30,9 @@ function Lena() {
         <h2>Kde tetuji?</h2>
 
         <p>Tetuji ve studiu Neon Spot v <strong>Hodoníně</strong>. Pokud máš zájem o <strong>tetování</strong>, tak se neváhej objednat. Těším se na tebe!</p>
+
+        <button className="button-booking"><Link to="/contact/#form">Objednat se</Link></button>
+
       </div>
     </section>
   );

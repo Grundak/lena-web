@@ -13,7 +13,7 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/lena-web" element={<Lena />} />
+          <Route path="/" element={<Lena />} />
           <Route path="/tattoo-gallery" element={<GalleryTattoo />} />
           <Route path="/art-gallery" element={<GalleryArt />} />
           <Route path="/contact" element={<Contact />} />
