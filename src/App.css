@@ -66,6 +66,8 @@ table {
   --button-hover-color: #c1c1c1;
   --hover-color: #a81249;
   --placeholder-color: #a8a8a8;
+
+  --lenaname-color: #605b5b;
 }
 
 /* Nastavení fontu pro všechny placeholdery */
@@ -186,7 +188,7 @@ table {
 .lena-name {
   font-family: "Lato", serif;
   font-size: 1.5rem;
-  color: var(--text-color-light);
+  color: var(--lenaname-color);
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
