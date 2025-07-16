@@ -64,8 +64,12 @@ function Header() {
               )}
             </li>
             <li>
+              <Link to="/merch">Merch</Link> {/* Odkaz na stránku s merchem */}
+            </li>
+            <li>
               <Link to="/contact">Kontakt</Link> {/* Odkaz na kontaktní stránku */}
             </li>
+
           </ol>
         </div>
       </div>
