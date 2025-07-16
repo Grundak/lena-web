@@ -376,11 +376,17 @@ table {
 .merch-item img {
   width: 100%; /* Obrázek vyplní šířku rodiče */
   max-width: 200px; /* Maximální šířka obrázku */
-  aspect-ratio: 1 / 1; /* Poměr stran 1:1 (čtverec) */  
+  aspect-ratio: 3 / 4; /* Poměr stran 3:4 */
   height: auto; /* Zachování proporcí obrázku */
   object-fit: cover; /* Zajištění, že obrázek vyplní prostor bez deformace */
   border-radius: 8px; /* Zaoblené rohy obrázku */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Jemný stín */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Plynulý přechod pro transformaci a průhlednost */
+}
+
+.merch-item img:hover {
+  transform: scale(1.02); /* Jemné zvětšení obrázku */
+  opacity: 0.9; /* Jemné snížení průhlednosti */
 }
 
 .merch-description {
@@ -735,5 +741,17 @@ table {
   }
   .footer-upper {
     justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 840px) {
+  .merch-item img {
+    width: 100%; /* Obrázek vyplní šířku rodiče */
+    max-width: 400px; /* Maximální šířka obrázku */
+    aspect-ratio: 3 / 4; /* Poměr stran 1:1 (čtverec) */  
+    height: auto; /* Zachování proporcí obrázku */
+    object-fit: cover; /* Zajištění, že obrázek vyplní prostor bez deformace */
+    border-radius: 8px; /* Zaoblené rohy obrázku */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Jemný stín */
   }
 }
