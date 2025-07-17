@@ -6,8 +6,10 @@ import React, { useState } from 'react';
 const merchItems = [
     {
         image: require('../images/merch/item1.webp'),
-        description: 'Tričko Lena Tattoo Art - Černé',
-        price: '500 Kč',
+        name: 'Pexeso',
+        description: '300g papír / oboustranná lesklá laminace',
+        size: 'rozměr kartičky 48x48 mm, 32 párů',
+        price: '250 Kč',
         additionalImages: [
             require('../images/merch/item1-detail1.webp'),
             require('../images/merch/item1-detail2.webp'),
@@ -15,8 +17,10 @@ const merchItems = [
     },
     {
         image: require('../images/merch/item2.webp'),
-        description: 'Tričko Lena Tattoo Art - Bílé',
-        price: '500 Kč',
+        name: 'Taška',
+        description: '100% bavlna, digitální tisk',
+        size: 'rozměr 38x42 cm, šité ucho 70 cm',
+        price: '250 Kč',
         additionalImages: [
             require('../images/merch/item2-detail1.webp'),
             require('../images/merch/item2-detail2.webp'),
@@ -35,7 +39,7 @@ function Merch() {
                 <h2>Merch</h2>
                 <p>„Autorské motivy, které můžeš nosit, darovat nebo si jen užívat.“</p>
                 <p>Můj merch vznikl z lásky k výtvarnu a touhy přenést svět tetování i mimo kůži. Každý motiv, který najdeš na taškách, kartičkách nebo pexesu, vychází z mých autorských návrhů – stejných, jaké používám i při tvorbě tetování.</p>
-                <p>Merch je dostupný v mém studiu Neon Spot v Hodoníně. Pokud bys měl zájem o objednání, neváhej mě kontaktovat.</p>
+                <p>Merch je dostupný v mém studiu Neon Spot v Hodoníně. Pokud bys měl zájem o objednání, neváhej mě kontaktovat. Posílám i přes zásilkovnu!</p>
             </div>
 
             <div className="merch-container" id="merch">
@@ -53,7 +57,10 @@ function Merch() {
                             className="w-full h-auto object-cover"
                         />
                         <div className="merch-description">
+                            <h3 className="merch-name">{item.name || 'Merch Item'}</h3>
                             <p>{item.description}</p>
+                            <p>{item.size}</p>
+
                             <p className="merch-price">{item.price}</p>
                         </div>
                     </div>

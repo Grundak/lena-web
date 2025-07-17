@@ -4,7 +4,6 @@ import './Lena.css'; // přidej tento import, pokud ještě nemáš
 
 // Import obrázků pro slideshow
 const lenaImages = [
-  require('../images/lena-lejskova-tattoo-artist-hodonin1.webp'),
   require('../images/lena-lejskova-tattoo-artist-hodonin2.webp'),
   require('../images/lena-lejskova-tattoo-artist-hodonin3.webp'),
   require('../images/lena-lejskova-tattoo-artist-hodonin4.webp'),
@@ -17,7 +16,7 @@ function Lena() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % lenaImages.length);
-    }, 3000);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, []);

@@ -394,7 +394,17 @@ table {
   margin-top: 0.5rem;
 }
 
+.merch-name {
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
 .merch-price {
+  margin-top: 0.5rem;
   font-weight: bold;
   color: var(--primary-color);
 }
