@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/lena-web/static/css/main.3a96aca7.css",
-    "main.js": "/lena-web/static/js/main.8c8d2e07.js",
+    "main.css": "/lena-web/static/css/main.ae8f1513.css",
+    "main.js": "/lena-web/static/js/main.f511b6dc.js",
     "static/js/453.68693753.chunk.js": "/lena-web/static/js/453.68693753.chunk.js",
     "static/media/item2-detail1.webp": "/lena-web/static/media/item2-detail1.79dbeccd47aed10f2499.webp",
-    "static/media/lena-lejskova-tattoo-artist-hodonin1.webp": "/lena-web/static/media/lena-lejskova-tattoo-artist-hodonin1.b0daa9fc1611c4a27264.webp",
     "static/media/item2-detail3.webp": "/lena-web/static/media/item2-detail3.b0d2a1ecb767179d33cd.webp",
     "static/media/09.webp": "/lena-web/static/media/09.baa34689b919a364a0ea.webp",
     "static/media/06.webp": "/lena-web/static/media/06.dcf045ba9186b107303d.webp",
@@ -91,12 +90,12 @@
     "static/media/53-3.webp": "/lena-web/static/media/53-3.cad8fa43c2a6504c7258.webp",
     "static/media/neonspot.webp": "/lena-web/static/media/neonspot.ba88864dbc42dea1e73f.webp",
     "index.html": "/lena-web/index.html",
-    "main.3a96aca7.css.map": "/lena-web/static/css/main.3a96aca7.css.map",
-    "main.8c8d2e07.js.map": "/lena-web/static/js/main.8c8d2e07.js.map",
+    "main.ae8f1513.css.map": "/lena-web/static/css/main.ae8f1513.css.map",
+    "main.f511b6dc.js.map": "/lena-web/static/js/main.f511b6dc.js.map",
     "453.68693753.chunk.js.map": "/lena-web/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a96aca7.css",
-    "static/js/main.8c8d2e07.js"
+    "static/css/main.ae8f1513.css",
+    "static/js/main.f511b6dc.js"
   ]
 }
