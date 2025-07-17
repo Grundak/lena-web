@@ -198,32 +198,34 @@ table {
 .lena-section {
   display: flex;
   align-items: center;
+  justify-content: center; /* Zarovnání obsahu na střed */
   padding: 3rem 0rem;
   background-color: var(--background-color-darker);
+  animation: slideInFromRight 1.5s ease-out;
 }
 
 .lena-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: flex; /* Flexbox pro zarovnání obsahu */
+  justify-content: center; /* Obrázky zarovnané na střed */
+  align-items: center; /* Vertikální zarovnání obrázků */
   flex: 1;
-  align-items: center;
-  text-align: left;
+  width: 400px; /* Šířka levé části */
+  height: 400px; /* Výška levé části */
+  overflow: hidden; /* Skrytí přetékajícího obsahu */
+  margin: 0.5rem; /* Odsazení od okolních prvků */
+  border-radius: 50%; /* Kruh */
 }
 
-.lena-left .lena-image {
-  width: 100%;
-  max-width: 450px;
-  margin-top: 10px;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  filter: grayscale(100%); /* Černobílý efekt */
-  transition: filter 0.3s ease; /* Plynulý přechod */
+.lena-left img {
+  width: 400px; /* Obrázek vyplní šířku rodiče */
+  height: 400px; /* Obrázek vyplní výšku rodiče */
+  object-fit: cover; /* Zachování poměru stran a vyplnění prostoru */
+  border-radius: 50%; /* Zaoblené rohy obrázku */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Jemný stín */
+  opacity: 1; /* Výchozí průhlednost */
+  transition: transform 3s ease-in-out; /* Plynulý přechod mezi obrázky */
 }
 
-.lena-left .lena-image:hover {
-  filter: grayscale(0%); /* Zobrazení barev při hoveru */
-}
 
 .lena-right {
   display: flex;
@@ -231,7 +233,6 @@ table {
   align-items: center;
   flex: 1;
   margin-left: 20px;
-  animation: slideInFromRight 1.5s ease-out;
 }
 
 .lena-right p {
@@ -754,4 +755,18 @@ table {
     border-radius: 8px; /* Zaoblené rohy obrázku */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Jemný stín */
   }
+}
+
+@media (min-width: 300px) and (max-width: 435px) {
+  .lena-left img {
+    width: 300px; /* Obrázek vyplní šířku rodiče */
+    height: 300px; /* Obrázek vyplní výšku rodiče */
+}
+}
+
+@media (min-width: 280px) and (max-width: 340px) {
+  .lena-left img {
+    width: 250px; /* Obrázek vyplní šířku rodiče */
+    height: 250px; /* Obrázek vyplní výšku rodiče */
+}
 }

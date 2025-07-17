@@ -33,8 +33,9 @@ function Merch() {
         <section id="merch" className="merch-section">
             <div className="merch-content">
                 <h2>Merch</h2>
-                <p>Na této stránce brzy najdete naše produkty.</p>
-                <p>Pokud máte zájem o nějaký konkrétní produkt, neváhejte nás kontaktovat.</p>
+                <p>„Autorské motivy, které můžeš nosit, darovat nebo si jen užívat.“</p>
+                <p>Můj merch vznikl z lásky k výtvarnu a touhy přenést svět tetování i mimo kůži. Každý motiv, který najdeš na taškách, kartičkách nebo pexesu, vychází z mých autorských návrhů – stejných, jaké používám i při tvorbě tetování.</p>
+                <p>Merch je dostupný v mém studiu Neon Spot v Hodoníně. Pokud bys měl zájem o objednání, neváhej mě kontaktovat.</p>
             </div>
 
             <div className="merch-container" id="merch">
