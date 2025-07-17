@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/lena-web/static/css/main.ae8f1513.css",
-    "main.js": "/lena-web/static/js/main.f511b6dc.js",
+    "main.css": "/lena-web/static/css/main.e77c0ca7.css",
+    "main.js": "/lena-web/static/js/main.0a234976.js",
     "static/js/453.68693753.chunk.js": "/lena-web/static/js/453.68693753.chunk.js",
     "static/media/item2-detail1.webp": "/lena-web/static/media/item2-detail1.79dbeccd47aed10f2499.webp",
     "static/media/item2-detail3.webp": "/lena-web/static/media/item2-detail3.b0d2a1ecb767179d33cd.webp",
     "static/media/09.webp": "/lena-web/static/media/09.baa34689b919a364a0ea.webp",
     "static/media/06.webp": "/lena-web/static/media/06.dcf045ba9186b107303d.webp",
-    "static/media/item1-detail1.webp": "/lena-web/static/media/item1-detail1.4242e52dec014d3a126c.webp",
     "static/media/10.webp": "/lena-web/static/media/10.a29ba0c285fa9448c2ad.webp",
     "static/media/19.webp": "/lena-web/static/media/19.8842d35a1444fe299a30.webp",
     "static/media/13.webp": "/lena-web/static/media/13.9fd4c1c44457bcf8c3e6.webp",
     "static/media/26.webp": "/lena-web/static/media/26.c110a9544f7a1c718dcd.webp",
+    "static/media/item1-detail1.webp": "/lena-web/static/media/item1-detail1.43198d7e4a56b9cb28cb.webp",
     "static/media/18.webp": "/lena-web/static/media/18.e83d51d91e9caeb89068.webp",
     "static/media/15.webp": "/lena-web/static/media/15.5befbd0ba10cb21b2b10.webp",
     "static/media/16.webp": "/lena-web/static/media/16.b6dea9fedc5c545571cd.webp",
@@ -21,15 +21,14 @@
     "static/media/11.webp": "/lena-web/static/media/11.d1b48920d30463bb6701.webp",
     "static/media/32.webp": "/lena-web/static/media/32.6d2954cdd4b580032909.webp",
     "static/media/05.webp": "/lena-web/static/media/05.a14c25919900f5af6731.webp",
+    "static/media/item1-detail2.webp": "/lena-web/static/media/item1-detail2.0ec5f692c9ce7e0449c9.webp",
     "static/media/07.webp": "/lena-web/static/media/07.1db775aa920875544f73.webp",
-    "static/media/item1-detail2.webp": "/lena-web/static/media/item1-detail2.c8a6d67be8f0193c0fc4.webp",
     "static/media/30.webp": "/lena-web/static/media/30.1febeda053bbf689ec89.webp",
     "static/media/21.webp": "/lena-web/static/media/21.73f72d2e04a3932a5398.webp",
     "static/media/04.webp": "/lena-web/static/media/04.e4642ca0ba9315009e81.webp",
     "static/media/33.webp": "/lena-web/static/media/33.fdd67051ab178b5866e1.webp",
     "static/media/lena-lejskova-tattoo-artist-hodonin3.webp": "/lena-web/static/media/lena-lejskova-tattoo-artist-hodonin3.c402ec771a1e97286f07.webp",
     "static/media/03.webp": "/lena-web/static/media/03.06e14775162878848494.webp",
-    "static/media/item1.webp": "/lena-web/static/media/item1.9cdc2f0619a8ecfb6bff.webp",
     "static/media/37.webp": "/lena-web/static/media/37.a065244607a8a2ad31b2.webp",
     "static/media/99.webp": "/lena-web/static/media/99.e630cf62ae46b7fc9334.webp",
     "static/media/63.webp": "/lena-web/static/media/63.dbf18386f6e15f928e45.webp",
@@ -40,6 +39,7 @@
     "static/media/08.webp": "/lena-web/static/media/08.68cd34d8ab71a2814e35.webp",
     "static/media/65.webp": "/lena-web/static/media/65.02aac97f4b9a9afe5679.webp",
     "static/media/01.webp": "/lena-web/static/media/01.198bfa2d606361a5a979.webp",
+    "static/media/item1.webp": "/lena-web/static/media/item1.9b11ee2b1321efb61da8.webp",
     "static/media/75.webp": "/lena-web/static/media/75.c87cc30c4a8bcfd43c9a.webp",
     "static/media/71.webp": "/lena-web/static/media/71.c11b02641154f7f6ba4a.webp",
     "static/media/27.webp": "/lena-web/static/media/27.e177d22f41da909c7643.webp",
@@ -90,12 +90,12 @@
     "static/media/53-3.webp": "/lena-web/static/media/53-3.cad8fa43c2a6504c7258.webp",
     "static/media/neonspot.webp": "/lena-web/static/media/neonspot.ba88864dbc42dea1e73f.webp",
     "index.html": "/lena-web/index.html",
-    "main.ae8f1513.css.map": "/lena-web/static/css/main.ae8f1513.css.map",
-    "main.f511b6dc.js.map": "/lena-web/static/js/main.f511b6dc.js.map",
+    "main.e77c0ca7.css.map": "/lena-web/static/css/main.e77c0ca7.css.map",
+    "main.0a234976.js.map": "/lena-web/static/js/main.0a234976.js.map",
     "453.68693753.chunk.js.map": "/lena-web/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae8f1513.css",
-    "static/js/main.f511b6dc.js"
+    "static/css/main.e77c0ca7.css",
+    "static/js/main.0a234976.js"
   ]
 }
