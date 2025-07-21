@@ -8,7 +8,7 @@ const merchItems = [
         image: require('../images/merch/item1.webp'),
         name: 'Pexeso',
         description: '300g papír / oboustranná lesklá laminace',
-        size: 'rozměr kartičky 48x48 mm, 32 párů',
+        size: 'rozměr kartičky 48x48 mm, 32 párů, celý arch',
         price: '250 Kč',
         additionalImages: [
             require('../images/merch/item1-detail1.webp'),

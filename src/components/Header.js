@@ -55,7 +55,7 @@ function Header() {
               <Link to="/">Lena</Link> {/* Odkaz na domovskou stránku */}
             </li>
             <li ref={dropdownRef} className="dropdown">
-              <button onClick={toggleDropdown} className="dropbtn">Galerie</button>
+              <button onClick={toggleDropdown} className="dropbtn">Tattoo</button>
               {dropdownOpen && (
                 <div className="dropdown-content">
                   <Link to="/tattoo-gallery">Tetování</Link> {/* Odkaz na tetovací galerii */}
@@ -65,6 +65,9 @@ function Header() {
             </li>
             <li>
               <Link to="/merch">Merch</Link> {/* Odkaz na stránku s merchem */}
+            </li>
+            <li>
+              <Link to="/paint">Obrazy</Link> {/* Odkaz na kontaktní stránku */}
             </li>
             <li>
               <Link to="/contact">Kontakt</Link> {/* Odkaz na kontaktní stránku */}

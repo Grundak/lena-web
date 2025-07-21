@@ -6,6 +6,7 @@ import GalleryArt from './components/GalleryArt';
 import Lena from './components/Lena';
 import Contact from './components/Contact';
 import Merch from './components/Merch';
+import Paint from './components/Paint';
 import Footer from './components/Footer';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/tattoo-gallery" element={<GalleryTattoo />} />
           <Route path="/art-gallery" element={<GalleryArt />} />
           <Route path="/merch" element={<Merch />} />
+          <Route path="/paint" element={<Paint />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
