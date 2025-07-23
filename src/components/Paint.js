@@ -6,10 +6,10 @@ import React, { useState } from 'react';
 const paintItems = [
     {
         image: require('../images/paint/item1.webp'),
-        name: 'Leknín',
+        name: 'Nad vodou',
         description: 'Akrylová malba na plátně',
-        size: 'rozměr 50x70 cm',
-        price: '1500 Kč',
+        size: 'rozměr 55x70 cm',
+        price: '8000 Kč',
         additionalImages: [
             require('../images/paint/item1-detail1.webp'),
             require('../images/paint/item1-detail2.webp'),
@@ -19,10 +19,10 @@ const paintItems = [
     },
     {
         image: require('../images/paint/item2.webp'),
-        name: 'Lenochod',
-        description: 'Olejomalba na plátně',
-        size: 'rozměr 60x80 cm',
-        price: '2000 Kč',
+        name: 'Bezpečí v koruně - 2025',
+        description: 'Akrylová malba na plátně',
+        size: 'rozměr 170x90 cm',
+        price: '17000 Kč',
         additionalImages: [
             require('../images/paint/item2-detail1.webp'),
             require('../images/paint/item2-detail2.webp'),
@@ -33,19 +33,19 @@ const paintItems = [
     {
         image: require('../images/paint/item3.webp'),
         name: 'Masaryk',
-        description: 'Akvarelová malba na papíře',
-        size: 'rozměr 40x60 cm',
-        price: '1200 Kč',
+        description: 'Akrylová malba na plátně',
+        size: 'rozměr 50x50 cm',
+        price: 'Prodáno',
         additionalImages: [
             require('../images/paint/item3-detail1.webp'),
         ],
     },
     {
         image: require('../images/paint/item4.webp'),
-        name: 'Opice',
-        description: 'Digitální malba',
-        size: 'rozměr 30x40 cm',
-        price: '800 Kč',
+        name: 'Konec lesa - 2024-2025',
+        description: 'Akrylová malba na plátně',
+        size: 'rozměr 55x70 cm',
+        price: '8000 Kč',
         additionalImages: [
             require('../images/paint/item4-detail1.webp'),
             require('../images/paint/item4-detail2.webp'),
@@ -56,15 +56,27 @@ const paintItems = [
     },
     {
         image: require('../images/paint/item5.webp'),
-        name: 'Pepi',
-        description: 'Mixed media na plátně',
-        size: 'rozměr 70x100 cm',
-        price: '2500 Kč',
+        name: 'Pepina za duhou - 2024',
+        description: 'kombinovaná technika na plátně',
+        size: 'rozměr 55x70 cm',
+        price: '8000 Kč',
         additionalImages: [
             require('../images/paint/item5-detail1.webp'),
             require('../images/paint/item5-detail2.webp'),
             require('../images/paint/item5-detail3.webp'),
             require('../images/paint/item5-detail4.webp'),
+        ],
+    },
+    {
+        image: require('../images/paint/item6.webp'),
+        name: 'Sphynx - 2025',
+        description: 'Akrylová malba na plátně',
+        size: 'rozměr 55x70 cm',
+        price: 'Prodáno',
+        additionalImages: [
+            require('../images/paint/item6-detail1.webp'),
+            require('../images/paint/item6-detail2.webp'),
+            require('../images/paint/item6-detail3.webp'),
         ],
     },
 ];
@@ -84,7 +96,7 @@ function Paint() {
 
                 <p>Vystavená díla zahrnují jak volně inspirované motivy z přírody (leknín, andulka), tak i zpodobnění osobností (např. realisticko-expresivní portrét T. G. Masaryka). Každý obraz má svůj vlastní příběh, ale společně tvoří souladné a esteticky propojené portfolio.</p>
 
-                <p>Obrazy jsou dostupné v mém studiu Neon Spot v Hodoníně. Pokud máte zájem o objednání, neváhejte mě kontaktovat. Posílám i přes zásilkovnu!</p>
+                <p>Obrazy jsou dostupné v mém studiu Neon Spot v Hodoníně. Pokud máte zájem o objednání, neváhejte mě kontaktovat. Pouze osobní odběr.</p>
             </div>
 
             <div className="paint-container" id="paint">
@@ -93,19 +105,21 @@ function Paint() {
                         key={index}
                         className="paint-item cursor-pointer"
                         onClick={() => setOpen(index)}
-                        onMouseEnter={() => setHoveredImage(item.additionalImages[0])} // Změna obrázku při hoveru
-                        onMouseLeave={() => setHoveredImage(null)} // Návrat k původnímu obrázku
+                        onMouseEnter={() => setHoveredImage(item.additionalImages[0])}
+                        onMouseLeave={() => setHoveredImage(null)}
                     >
                         <img
-                            src={hoveredImage && hoveredImage === item.additionalImages[0] ? hoveredImage : item.image} // Opravená podmínka pro zobrazení obrázku
+                            src={hoveredImage && hoveredImage === item.additionalImages[0] ? hoveredImage : item.image}
                             alt={item.description}
-                            className="w-full h-auto object-cover"
+                            className={`w-full h-auto object-cover ${item.price === 'Prodáno' ? 'grayscale' : ''}`}
                         />
                         <div className="paint-description">
                             <h3 className="paint-name">{item.name || 'Obraz'}</h3>
                             <p>{item.description}</p>
                             <p>{item.size}</p>
-                            <p className="paint-price">{item.price}</p>
+                            <p className={`paint-price ${item.price === 'Prodáno' ? 'sold' : ''}`}>
+                                {item.price}
+                            </p>
                         </div>
                     </div>
                 ))}
@@ -128,7 +142,7 @@ function Paint() {
             <button className="button-booking">
                 <Link to="/contact/#form">Objednej si</Link>
             </button>
-        </section>
+        </section >
     );
 }
 
