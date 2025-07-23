@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 const paintItems = [
     {
         image: require('../images/paint/item1.webp'),
-        name: 'Nad vodou',
+        name: 'Nad vodou - 2025',
         description: 'Akrylová malba na plátně',
         size: 'rozměr 55x70 cm',
         price: '8000 Kč',
@@ -21,8 +21,8 @@ const paintItems = [
         image: require('../images/paint/item2.webp'),
         name: 'Bezpečí v koruně - 2025',
         description: 'Akrylová malba na plátně',
-        size: 'rozměr 170x90 cm',
-        price: '17000 Kč',
+        size: 'rozměr 55x70 cm',
+        price: '8000 Kč',
         additionalImages: [
             require('../images/paint/item2-detail1.webp'),
             require('../images/paint/item2-detail2.webp'),
@@ -32,7 +32,7 @@ const paintItems = [
     },
     {
         image: require('../images/paint/item3.webp'),
-        name: 'Masaryk',
+        name: 'Masaryk - 2025',
         description: 'Akrylová malba na plátně',
         size: 'rozměr 50x50 cm',
         price: 'Prodáno',
@@ -44,8 +44,8 @@ const paintItems = [
         image: require('../images/paint/item4.webp'),
         name: 'Konec lesa - 2024-2025',
         description: 'Akrylová malba na plátně',
-        size: 'rozměr 55x70 cm',
-        price: '8000 Kč',
+        size: 'rozměr 170x90 cm',
+        price: '17000 Kč',
         additionalImages: [
             require('../images/paint/item4-detail1.webp'),
             require('../images/paint/item4-detail2.webp'),
@@ -111,7 +111,7 @@ function Paint() {
                         <img
                             src={hoveredImage && hoveredImage === item.additionalImages[0] ? hoveredImage : item.image}
                             alt={item.description}
-                            className={`w-full h-auto object-cover ${item.price === 'Prodáno' ? 'grayscale' : ''}`}
+                            className="w-full h-auto object-cover"
                         />
                         <div className="paint-description">
                             <h3 className="paint-name">{item.name || 'Obraz'}</h3>
@@ -129,11 +129,11 @@ function Paint() {
                     slides={
                         open !== undefined
                             ? [
-                                { src: paintItems[open].image },
-                                ...paintItems[open].additionalImages.map((img) => ({
-                                    src: img,
-                                })),
-                            ]
+                                  { src: paintItems[open].image },
+                                  ...paintItems[open].additionalImages.map((img) => ({
+                                      src: img,
+                                  })),
+                              ]
                             : []
                     }
                     index={0}
@@ -142,7 +142,7 @@ function Paint() {
             <button className="button-booking">
                 <Link to="/contact/#form">Objednej si</Link>
             </button>
-        </section >
+        </section>
     );
 }
 

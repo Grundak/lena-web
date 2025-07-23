@@ -518,14 +518,6 @@ table {
   margin: 2rem auto; /* Automatické zarovnání na střed */
 }
 
-.grayscale {
-  filter: grayscale(100%); /* Černobílý efekt */
-  transition: filter 0.3s ease; /* Plynulý přechod při změně */
-}
-
-.grayscale:hover {
-  filter: none; /* Při hoveru se efekt odstraní */
-}
 
 /* $$$$$$$$$$ CONTACT $$$$$$$$$$ */
 
