@@ -1,21 +1,25 @@
 {
   "files": {
-    "main.css": "/lena-web/static/css/main.8097da8b.css",
-    "main.js": "/lena-web/static/js/main.2d91d088.js",
+    "main.css": "/lena-web/static/css/main.55b735cc.css",
+    "main.js": "/lena-web/static/js/main.ff72bcd4.js",
     "static/js/453.68693753.chunk.js": "/lena-web/static/js/453.68693753.chunk.js",
     "static/media/item5-detail4.webp": "/lena-web/static/media/item5-detail4.c31709615beffb203a33.webp",
     "static/media/item2-detail1.webp": "/lena-web/static/media/item2-detail1.ec7f1e1e3ee3f558ed64.webp",
+    "static/media/item6-detail1.webp": "/lena-web/static/media/item6-detail1.cce4dbe2899954f9460e.webp",
     "static/media/item5-detail3.webp": "/lena-web/static/media/item5-detail3.cb7179bc9ea26823187e.webp",
     "static/media/item5-detail2.webp": "/lena-web/static/media/item5-detail2.a8293e56cfa80ff5b362.webp",
+    "static/media/item6-detail2.webp": "/lena-web/static/media/item6-detail2.2a06b67e2826221e821e.webp",
     "static/media/item4-detail5.webp": "/lena-web/static/media/item4-detail5.884d010bf6c2ce8c26ec.webp",
     "static/media/item4-detail4.webp": "/lena-web/static/media/item4-detail4.1618a9d016b391e215a1.webp",
     "static/media/item1-detail3.webp": "/lena-web/static/media/item1-detail3.a27af0fb4bc2f05bab58.webp",
     "static/media/item1-detail1.webp": "/lena-web/static/media/item1-detail1.43198d7e4a56b9cb28cb.webp",
+    "static/media/item6-detail3.webp": "/lena-web/static/media/item6-detail3.eec7685d62567340ab1f.webp",
     "static/media/item1.webp": "/lena-web/static/media/item1.9b11ee2b1321efb61da8.webp",
     "static/media/item1-detail2.webp": "/lena-web/static/media/item1-detail2.0ec5f692c9ce7e0449c9.webp",
     "static/media/item5.webp": "/lena-web/static/media/item5.b77f87eaa7d838aac3b2.webp",
     "static/media/item4-detail1.webp": "/lena-web/static/media/item4-detail1.3c278a2e388444e20fe6.webp",
     "static/media/item4-detail3.webp": "/lena-web/static/media/item4-detail3.1d51dd206d95b459d5e5.webp",
+    "static/media/item6.webp": "/lena-web/static/media/item6.f7f93b6ce34ef2719abd.webp",
     "static/media/item2-detail3.webp": "/lena-web/static/media/item2-detail3.33a8fc5655e4493192e1.webp",
     "static/media/item5-detail1.webp": "/lena-web/static/media/item5-detail1.706cfa7d865d7ebcf40c.webp",
     "static/media/item3.webp": "/lena-web/static/media/item3.bd06ea74a50741a99366.webp",
@@ -106,12 +110,12 @@
     "static/media/53-3.webp": "/lena-web/static/media/53-3.cad8fa43c2a6504c7258.webp",
     "static/media/neonspot.webp": "/lena-web/static/media/neonspot.ba88864dbc42dea1e73f.webp",
     "index.html": "/lena-web/index.html",
-    "main.8097da8b.css.map": "/lena-web/static/css/main.8097da8b.css.map",
-    "main.2d91d088.js.map": "/lena-web/static/js/main.2d91d088.js.map",
+    "main.55b735cc.css.map": "/lena-web/static/css/main.55b735cc.css.map",
+    "main.ff72bcd4.js.map": "/lena-web/static/js/main.ff72bcd4.js.map",
     "453.68693753.chunk.js.map": "/lena-web/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8097da8b.css",
-    "static/js/main.2d91d088.js"
+    "static/css/main.55b735cc.css",
+    "static/js/main.ff72bcd4.js"
   ]
 }
