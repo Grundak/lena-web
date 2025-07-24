@@ -96,7 +96,7 @@ function Paint() {
 
                 <p>Vystavená díla zahrnují jak volně inspirované motivy z přírody (leknín, andulka), tak i zpodobnění osobností (např. realisticko-expresivní portrét T. G. Masaryka). Každý obraz má svůj vlastní příběh, ale společně tvoří souladné a esteticky propojené portfolio.</p>
 
-                <p>Obrazy jsou dostupné v mém studiu Neon Spot v Hodoníně. Pokud máš zájem o objednání obrazů, neváhej mě kontaktovat.</p>
+                <p>Obrazy jsou dostupné v mém studiu Neon Spot v Hodoníně. Maluji obrazy na zakázku, které odrážejí vaši osobnost, styl i přání – každý kus je jedinečný. Pokud máš zájem o objednání obrazů, neváhej mě kontaktovat.</p>
             </div>
 
             <div className="paint-container" id="paint">

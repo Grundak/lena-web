@@ -21,7 +21,7 @@ function Contact() {
                     </ol>
                 </div>
 
-                <p className="contact-text">Pokud máte zájem o tetování, merch nebo obrazy, tak mě kontaktujte mě pomocí formuláře.</p>
+                <p className="contact-text">Formulář vyplň dle tvého přání a zájmu - tetování, obraz na míru nebo chceš některý autorský produkt? Prosím, napiš vše co nejpřesněji a já se ti ozvu co nejdřív.</p>
                 <Form />
                 <p className="form-info">Pro potvrzení termínu je potřeba uhradit zálohu – ta se odečte z ceny tetování.</p>
                 <p className="form-info">Pokud se nemůžete dostavit, dejte vědět minimálně 4 dny předem, jinak záloha propadá.</p>

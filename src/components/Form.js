@@ -54,7 +54,7 @@ function Form() {
                         <textarea
                             id="message"
                             name="message"
-                            placeholder={`1. Napiš svoji představu, co chceš vytetovat\n2. Umístění na těle\n3. Velikost (přibližně)\nNEBO\nCo si chceš objednat :)`}
+                            placeholder={`1. Tetování: popiš motiv, umístění, velikost, barevnost\n2. Obraz: název obrazu nebo zakázka\n3. Merch: název produktu, počet kusů`}
                             rows="5"
                             required
                         ></textarea>
