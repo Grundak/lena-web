@@ -81,7 +81,7 @@ const paintItems = [
     },
         {
         image: require('../images/paint/item7.webp'),
-        name: 'Stín bezohledosti - 2025',
+        name: 'Stín bezohlednosti - 2025',
         description: 'Akrylová malba na plátně',
         size: 'rozměr 170x90 cm',
         price: '17000 Kč',
