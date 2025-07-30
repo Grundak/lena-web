@@ -79,6 +79,20 @@ const paintItems = [
             require('../images/paint/item6-detail3.webp'),
         ],
     },
+        {
+        image: require('../images/paint/item7.webp'),
+        name: 'Stín bezohledosti - 2025',
+        description: 'Akrylová malba na plátně',
+        size: 'rozměr 170x90 cm',
+        price: '17000 Kč',
+        additionalImages: [
+            require('../images/paint/item7-detail1.webp'),
+            require('../images/paint/item7-detail2.webp'),
+            require('../images/paint/item7-detail3.webp'),
+            require('../images/paint/item7-detail4.webp'),
+            require('../images/paint/item7-detail5.webp'),
+        ],
+    },
 ];
 
 function Paint() {
