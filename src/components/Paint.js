@@ -93,6 +93,30 @@ const paintItems = [
             require('../images/paint/item7-detail5.webp'),
         ],
     },
+            {
+        image: require('../images/paint/item8.webp'),
+        name: 'Portrét ženy - 2025',
+        description: 'Akrylová malba na plátně',
+        size: 'rozměr 55x70 cm',
+        price: 'Prodáno',
+        additionalImages: [
+            require('../images/paint/item8-detail1.webp'),
+            require('../images/paint/item8-detail2.webp'),
+            require('../images/paint/item8-detail3.webp'),
+        ],
+    },
+                {
+        image: require('../images/paint/item9.webp'),
+        name: 'Panna online - 2024',
+        description: 'Akrylová malba na plátně',
+        size: 'rozměr 55x70 cm',
+        price: '7000 Kč',
+        additionalImages: [
+            require('../images/paint/item9-detail1.webp'),
+            require('../images/paint/item9-detail2.webp'),
+            require('../images/paint/item9-detail3.webp'),
+        ],
+    },
 ];
 
 function Paint() {

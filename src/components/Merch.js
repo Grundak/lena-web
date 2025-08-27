@@ -17,14 +17,26 @@ const merchItems = [
     },
     {
         image: require('../images/merch/item2.webp'),
-        name: 'Taška',
-        description: '100% bavlna, digitální tisk',
+        name: 'Taška - Kočka',
+        description: '100% bavlna, 140 g, digitální tisk',
         size: 'rozměr 38x42 cm, šité ucho 70 cm',
         price: '250 Kč',
         additionalImages: [
             require('../images/merch/item2-detail1.webp'),
             require('../images/merch/item2-detail2.webp'),
             require('../images/merch/item2-detail3.webp'),
+        ],
+    },
+        {
+        image: require('../images/merch/item3.webp'),
+        name: 'Taška - Kapybara',
+        description: '100% bavlna, 220 g, digitální tisk',
+        size: 'rozměr 38x40x10 cm, šité ucho 65 cm',
+        price: '280 Kč',
+        additionalImages: [
+            require('../images/merch/item3-detail1.webp'),
+            require('../images/merch/item3-detail2.webp'),
+            require('../images/merch/item3-detail3.webp'),
         ],
     },
 ];
